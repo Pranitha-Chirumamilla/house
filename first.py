@@ -72,4 +72,9 @@ if __name__ == "__main__":
     if submit_button:
         larger_text = f"<h2 style='color: blue;'>The Predicted House Price is : {format(result, '.2f')} Lakhs</h2>"
         st.markdown(larger_text, unsafe_allow_html=True)
+        # Add an image to the second column (you need to specify the image URL)
+    col2.image('https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg', use_column_width=True)
+    
+    # Display the predicted value in the first column
+    col2.write(f"The predicted value is: {result} Lakhs")
         
